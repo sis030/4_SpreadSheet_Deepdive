@@ -76,7 +76,6 @@ function initSpreadsheet() {
         spreadsheet.push(spreadsheetRow);
     }
     drawSheet();
-    console.log(spreadsheet);
 }
 
 function createCellEl(cell){
@@ -108,7 +107,6 @@ function handleCellClick(cell){
     const rowHeaderEl = getElFromRowCol(rowHeader.row, rowHeader.column);
     columnHeaderEl.classList.add('active');
     rowHeaderEl.classList.add('active');
-    console.log('clicked cell', columnHeaderEl, rowHeaderEl);
     document.querySelector("#cell-status").innerHTML = cell.columnName + cell.rowName;
 }
 
